@@ -1,0 +1,71 @@
+GET http://localhost:4000/api/tasks
+
+###
+POST http://localhost:4000/api/tasks
+Content-Type: application/json
+
+{
+    "title": "the first task",
+    "description":"the first task description"
+}
+###
+
+POST http://localhost:4000/api/tasks
+Content-Type: application/json
+
+{
+    "title":"the second task",
+    "description":"the second task description"
+}
+###
+
+GET http://localhost:4000/api/tasks
+
+###
+POST http://localhost:4000/api/tasks
+Content-Type: application/json
+
+{
+    "title":"the third task",
+    "description":"the third task description"
+}
+
+####
+ GET http://localhost:4000/api/tasks/
+
+###
+
+PATCH http://localhost:4000/api/tasks/658d78cb8fa34e4a293ee024
+Content-Type: application/json
+
+{
+    "description":"the second task is updated"
+}
+
+###
+GET http://localhost:4000/api/tasks
+
+###
+DELETE http://localhost:4000/api/tasks/658d79dd8fa34e4a293ee027
+
+###
+
+POST http://localhost:4000/api/tasks
+Content-Type: application/json
+
+{
+    "title":"third task",
+    "description":"third task description"
+}
+
+###
+
+PATCH http://localhost:4000/api/tasks/658d78cb8fa34e4a293ee024
+Content-Type: application/json
+
+{
+    "description":"second task description"
+}
+
+###
+GET http://localhost:4000/api/tasks
